@@ -1,13 +1,24 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+//    Recording r1 = new Recording(10, "gigi", "mp3");
+
+
+//    r1.abbassaVolume(); // alza di 1 il volume
+//    r1.AlzaVolume(); // abbassa di 1 il volume
+//    r1.setVolume(7); // ti lascia scegliere il volume
+//    r1.play();
+
+    Video v1 = new Video("mp4", 15, "La vita è bella");
+    v1.setVolume(2);
+//    v1.setLuminosita(12);
+//    v1.play();
+//    v1.aumentaLuminosita();
+
+    System.out.println(v1);
+
+//    Image img1 = new Image("io",7,"jpg");
+//    img1.stampaImage();
+//    img1.show();
 }
