@@ -1,6 +1,4 @@
-import entities.Image;
-import entities.Recording;
-import entities.Video;
+import entities.*;
 
 void main() {
     //RECORDING
@@ -28,11 +26,16 @@ void main() {
 //    img1.show();   //OK
 //    System.out.println(img1);
 
+    // QUI BISOGNA PRIMA CREARE 5 ELEMENTI MULTIMEDIALI CON VALORI DA TASTIERA E POI PARTE
+//    MediaPlayer.riproduci();
 
+    Video v2 = new Video("La vita degli squali", 360, "mp4");
+    Video v3 = new Video("La vita degli squali", 360, "mp4");
 
-    
+    Media[] playlist = {r1, v1, img1, v2, v3};
 
-
+    // QUESTO PARTE CON UN ARRAY PRONTO
+    MediaPlayer.riproduciConListaPronta(playlist);
 
 
 }
