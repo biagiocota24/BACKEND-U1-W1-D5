@@ -1,7 +1,7 @@
-package entities;
+package entities.mediaPlayer;
 
-import interfaces.HasLuminosita;
-import interfaces.Visualizzabile;
+import interfaces.mediaPlayer.HasLuminosita;
+import interfaces.mediaPlayer.Visualizzabile;
 
 import java.util.Scanner;
 
@@ -60,7 +60,7 @@ public class Image extends Media implements HasLuminosita, Visualizzabile {
 
     @Override
     public String toString() {
-        return "entities.Image{" +
+        return "entities.mediaPlayer.Image{" +
                 "luminosita=" + luminosita +
                 "} " + super.toString();
     }

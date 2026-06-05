@@ -1,4 +1,4 @@
-package entities;
+package entities.mediaPlayer;
 
 import java.util.Scanner;
 

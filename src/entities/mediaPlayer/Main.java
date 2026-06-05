@@ -1,4 +1,4 @@
-import entities.*;
+import entities.mediaPlayer.*;
 
 void main() {
     //RECORDING

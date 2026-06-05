@@ -1,8 +1,8 @@
-package entities;
+package entities.mediaPlayer;
 
-import interfaces.HasLuminosita;
-import interfaces.HasVolume;
-import interfaces.Riproducibile;
+import interfaces.mediaPlayer.HasLuminosita;
+import interfaces.mediaPlayer.HasVolume;
+import interfaces.mediaPlayer.Riproducibile;
 
 import java.util.Scanner;
 
@@ -98,7 +98,7 @@ public class Video extends Media implements HasLuminosita, HasVolume, Riproducib
 
     @Override
     public String toString() {
-        return "entities.Video{" +
+        return "entities.mediaPlayer.Video{" +
                 "luminosita=" + luminosita +
                 ", volume=" + volume +
                 ", durata=" + durata +

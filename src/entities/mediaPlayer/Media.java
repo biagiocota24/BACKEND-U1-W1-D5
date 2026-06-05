@@ -1,4 +1,4 @@
-package entities;
+package entities.mediaPlayer;
 
 public abstract class Media {
 
@@ -21,7 +21,7 @@ public abstract class Media {
 
     @Override
     public String toString() {
-        return "entities.Media{" +
+        return "entities.mediaPlayer.Media{" +
                 "name='" + name + '\'' +
                 ", formato='" + formato + '\'' +
                 '}';

@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.mediaPlayer;
 
 public interface Riproducibile {
     int getDurata();

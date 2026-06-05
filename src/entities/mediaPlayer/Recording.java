@@ -1,7 +1,7 @@
-package entities;
+package entities.mediaPlayer;
 
-import interfaces.HasVolume;
-import interfaces.Riproducibile;
+import interfaces.mediaPlayer.HasVolume;
+import interfaces.mediaPlayer.Riproducibile;
 
 import java.util.Scanner;
 
@@ -70,7 +70,7 @@ public class Recording extends Media implements Riproducibile, HasVolume {
 
     @Override
     public String toString() {
-        return "entities.Recording{" +
+        return "entities.mediaPlayer.Recording{" +
                 super.toString() +
                 "durata=" + durata +
                 ", volume=" + volume +
