@@ -24,10 +24,35 @@ public abstract class Personaggio {
     }
 
     public void setEnergia(int energia) {
-        if (this.energia <= 0){
-            System.out.println("Personaggio gia sconfitto");
-        }else{
+        if (energia <= 0) {
+            System.out.println(this.getName() + " sconfitto");
+            this.energia = 0;
+        } else if (energia > 100) {
+            this.energia = 100;
+        } else {
             this.energia = energia;
+        }
+    }
+
+    public void setLivello(int livello) {
+        if (livello <= 0) {
+            System.out.println("Devi inserire un valore maggiore di 0 !");
+        } else if (livello > 10) {
+            this.livello = 10;
+        } else {
+            this.livello = livello;
+        }
+    }
+
+    public void setName(String name) {
+        if (name.length() <= 0) {
+            System.out.println("Devi inserire un nome");
+        } else if (name.length() > 30) {
+            System.out.println("Che nome strano !!");
+            System.out.println("Te lo accettiamo comunque !");
+            this.name = name;
+        } else {
+            this.name = name;
         }
     }
 }
