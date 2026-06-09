@@ -17,7 +17,7 @@ public class Combattimento {
         Personaggio primoPers = personaggi[primo - 1];
         System.out.println("Hai selezionato : " + primoPers.getName());
 
-        //SELEZIONE SECONDO PERSONAGGIO 
+        //SELEZIONE SECONDO PERSONAGGIO
         int secondo;
         do {
             System.out.println("Seleziona il secondo personaggio inserendo un numero da 1 a " + personaggi.length + " e diverso dal primo personaggio");
@@ -121,6 +121,7 @@ public class Combattimento {
                 case "guerriero" -> personaggi[i] = new Guerriero();
                 case "mago" -> personaggi[i] = new Mago();
                 case "mercante" -> personaggi[i] = new Mercante();
+
                 // SE IL TIPO DI PERSONAGGIO SCELTO NON ERA VALIDO DECREMENTA L'INDICE E TE LO FA REINSERIRE
                 default -> {
                     System.out.println("Tipo personaggio non disponibile ! ");
